@@ -1,0 +1,21 @@
+<html>
+<h1>Song imformation</h1>
+
+<ul>
+    <P>Music title</P>
+    <li>{{ song.music_title }}</li>
+    <P>Singer</P>
+    <li>{{ song.music_singer }}</li>
+    <P>album</P>
+    <li>{{ song.music_album }}</li>
+    <li>{{ song.lyric_path }}</li>
+    <li>{{ song.music_path }}</li>
+</ul>
+<body>
+
+<div>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src='//music.163.com/outchain/player?type=2&id={{song.music_cloud_id}}&auto=1&height=66'></iframe>
+</div>
+</body>
+
+</html>

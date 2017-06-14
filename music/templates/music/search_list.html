@@ -1,0 +1,12 @@
+{% if latest_search_result_list %}
+    <h1>
+        Search Results
+    </h1>
+    <ul>
+    {% for song in latest_search_result_list %}
+        <li><a href="/music/song_id/{{ song.music_local_id }}/">{{ song.music_title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No songs are available.</p>
+{% endif %}
